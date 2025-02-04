@@ -13,6 +13,46 @@
   }
 }
 
+
+@media (max-width: 430px) { /* iPhone 11 */
+  body, html {
+      width: 100%;
+      overflow-x: hidden; /* Evita desplazamiento horizontal */
+      margin: 0;
+      padding: 0;
+  }
+
+  .container {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .images {
+      display: flex;
+      flex-direction: column; /* Hace que las imágenes se apilen */
+      align-items: center; /* Centra las imágenes */
+      width: 100%;
+      gap: 10px;
+  }
+
+  .photo {
+      width: 90%; /* Hace que las imágenes ocupen el 90% del ancho de la pantalla */
+      max-width: 300px; /* Limita el tamaño máximo */
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+  .title{
+    width: 100%;
+  }
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
