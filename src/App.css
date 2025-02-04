@@ -1,0 +1,363 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: 'Hello January';
+  src: url(./Componentes/Fonts/HELLO\ JANUARY\ SCRIPT\ CYRILLIC\ SCRIPT.OTF);
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+body {
+  margin: 0;
+  margin-top: -80px;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffe4ec;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  width: 1600px;
+  height: 600px;
+  position: relative;
+}
+
+.title {
+  font-size: 90px;
+  color: #d63384;
+  font-family: Hello January;
+  font-weight: 200;
+}
+
+.images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+  background: white;
+  padding: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #fff;
+  position: absolute;
+  transform: rotate(var(--rotation));
+}
+
+.scattered:nth-child(1) {
+  top: 10%;
+  left: 15%;
+  --rotation: -10deg;
+}
+.scattered:nth-child(2) {
+  top: 60%;
+  left: 70%;
+  --rotation: 15deg;
+}
+.scattered:nth-child(3) {
+  top: 40%;
+  left: 10%;
+  --rotation: -5deg;
+}
+.scattered:nth-child(4) {
+  top: 75%;
+  left: 35%;
+  --rotation: 10deg;
+}
+.scattered:nth-child(5) {
+  top: 35%;
+  left: 85%;
+  --rotation: 10deg;
+}
+.scattered:nth-child(6) {
+  top: 1%;
+  right: 85%;
+  --rotation: -20deg;
+}
+.scattered:nth-child(7) {
+  top: -10%;
+  left: 85%;
+  --rotation: -20deg;
+}
+
+.scattered:nth-child(8) {
+  top: 50%;
+  left: 50%;
+  --rotation: 0deg;
+}
+.scattered:nth-child(9) {
+  top: 30%;
+  left: 30%;
+  --rotation: 0deg;
+}
+.scattered:nth-child(10) {
+  top: 70%;
+  left: -5%;
+  --rotation: -10deg;
+}
+.scattered:nth-child(11) {
+  top: 10%;
+  left: 65%;
+  --rotation: 10deg;
+}
+.scattered:nth-child(12) {
+  top: 80%;
+  left: 55%;
+  --rotation: 15deg;
+}
+.scattered:nth-child(13) {
+  top: 0%;
+  left: 25%;
+  --rotation: 15deg;
+}
+.scattered:nth-child(14) {
+  top: 70%;
+  left: 15%;
+  --rotation: 15deg;
+}
+.scattered:nth-child(15) {
+  top: 0%;
+  left: 45%;
+  --rotation: 15deg;
+}
+.scattered:nth-child(16) {
+  top: 10%;
+  left: 45%;
+  --rotation: 15deg;
+}
+
+
+
+/* 📜 Estilos de la carta */
+.letter-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.letter {
+  width: 250px;
+  height: 150px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.letter-preview {
+  font-size: 100px;
+  color: #d63384;
+  font-weight: bold;
+}
+
+.letter.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.2);
+  padding: 10px;
+  width: 800px;
+  height: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gatitos{
+  width: 200px;
+}
+
+.deco{
+  width: 500px;
+  position: absolute;
+  top: -150px;
+  left: 35%;
+}
+
+.deco1{
+  width: 200px;
+  position: absolute;
+  top: 50px;
+  left: 65%;
+}
+.deco2{
+  width: 200px;
+  position: absolute;
+  top: 27px;
+  left:15%;
+}
+
+
+/* From Uiverse.io by bedirhan-arslan */ 
+.formField {
+  margin: 10px;
+  position: relative;
+}
+
+.input {
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 16px;
+  font-weight: 550;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 0 5px transparent;
+}
+
+.input:hover,
+.input:focus {
+  box-shadow: 0 0 0 2px #ff51a8;
+}
+
+.formField span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 8px 15px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.input:focus + span,
+.input:valid + span {
+  transform: translateY(-32px) translateX(-5px) scale(0.95);
+  transition: 0.3s ease-in-out;
+}
+
+
+/* From Uiverse.io by Madflows */ 
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 15px;
+ }
+ 
+ button.learn-more {
+  margin-top: 20px;
+  font-weight: 600;
+  width: 250px;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 0.75em;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+ }
+ 
+ button.learn-more::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f9c4d2;
+  border-radius: inherit;
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0.75em, -1em);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+ }
+ 
+ button.learn-more:hover {
+  background: #ffe9e9;
+  -webkit-transform: translate(0, 0.25em);
+  transform: translate(0, 0.25em);
+ }
+ 
+ button.learn-more:hover::before {
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0.5em, -1em);
+  transform: translate3d(0, 0.5em, -1em);
+ }
+ 
+ button.learn-more:active {
+  background: #ffe9e9;
+  -webkit-transform: translate(0em, 0.75em);
+  transform: translate(0em, 0.75em);
+ }
+ 
+ button.learn-more:active::before {
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0, -1em);
+  transform: translate3d(0, 0, -1em);
+ }
+
+
+
+
+ .pista{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #d63384;
+}
