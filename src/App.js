@@ -69,6 +69,10 @@ const App = () => {
         </div>
       ) : (
         <div className="celebration">
+          <h1 className="morsh">Morshitoo</h1>
+          <h1 className="morsh2">Ti Amuuuu</h1>
+          <h1 className="morsh3">Olaaaaa</h1>
+          <h1 className="morsh4">Quesoo</h1>
                     <img className="deco" src="https://static.vecteezy.com/system/resources/thumbnails/014/464/019/small_2x/flag-love-valentine-for-decoration-png.png"></img>
           <img className="deco1" src="https://i.pinimg.com/originals/a0/ba/95/a0ba951828efe9613d64db6e5b4f33e7.gif"></img>
           <img className="deco2" src="https://media.tenor.com/zSx3dlZb7AcAAAAj/mochikana.gif"></img>
@@ -86,7 +90,7 @@ const App = () => {
                 <img className="gatitos" src="https://i.pinimg.com/originals/fd/35/30/fd3530b992c00cc1556a794a306cef45.gif"></img>
 
                   <p><mark>04/02/2023</mark></p>
-              <p>Dos años, 730 días desde que me pediste ese beso, algo que en 2023 no  lo creería, que la chica más hermosa que haya conocido me haya pedido un beso, que la chica de ojitos hermosos que me ignoraba por los pasillos del top me esté pidiendo un beso. <br></br>
+              <p className="carta">Dos años, 730 días desde que me pediste ese beso, algo que en 2023 no  lo creería, que la chica más hermosa que haya conocido me haya pedido un beso, que la chica de ojitos hermosos que me ignoraba por los pasillos del top me esté pidiendo un beso. <br></br>
 
               Me enamore como si fuera la primera vez sintiéndome así, como si nunca hubiera amado antes, como si fueras mi primer amor. Porque me ensañaste cosas que nunca antes había aprendido, tanto como en relación cómo para uno propio, que aunque estemos distanciados, peleados o sin tiempo siempre tengo que enfocarme en mis metas y en crecer personalmente, me enseñaste a amar y demostrar mis emociones. 
               Quizás no sea la persona perfecta para vos, cometo errores, tengo miles de defectos, pero hago lo posible por seguir enamorándote , por hacerte feliz, día a día me esfuerzo por darte lo mejor de mi, para que te sientas bien y te sientas feliz junto a mi.<br></br>

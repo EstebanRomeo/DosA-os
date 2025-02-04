@@ -13,6 +13,59 @@
   }
 }
 
+@media (max-width: 1024px) and (max-height: 600px) {
+  body, html {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden; /* Evita el desbordamiento horizontal */
+      margin: 0;
+      padding: 0;
+  }
+
+  .container {
+      width: 100%;
+      max-width: 1024px; /* Se ajusta a la resolución máxima */
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .title {
+      font-size: 2rem;
+      text-align: center;
+  }
+
+  .images {
+      display: flex;
+      flex-wrap: wrap; /* Permite que las imágenes se ajusten en filas */
+      justify-content: center;
+      gap: 15px;
+      max-width: 100%;
+  }
+
+  .photo {
+      width: calc(30% - 10px); /* Distribuye las imágenes en 3 columnas */
+      max-width: 250px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+  .letter-container {
+      width: 80%;
+      max-width: 500px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      margin-top: 20px;
+  }
+}
+
+
+
 
 @media (max-width: 430px) { /* iPhone 11 */
   body, html {
@@ -401,4 +454,53 @@ button {
  .pista{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #d63384;
+}
+
+
+.morsh{
+  position: absolute;
+  font-size: 90px;
+  color: #d63384;
+  font-family: Hello January;
+  font-weight: 200;
+  opacity: 0.2;
+  
+}
+.morsh2{
+  position: absolute;
+  right: 200px;
+  font-size: 90px;
+  color: #d63384;
+  font-family: Hello January;
+  font-weight: 200;
+  opacity: 0.2;
+  
+}
+.morsh3{
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  font-size: 90px;
+  color: #d63384;
+  font-family: Hello January;
+  font-weight: 200;
+  opacity: 0.2;
+}
+.morsh4{
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  font-size: 90px;
+  color: #d63384;
+  font-family: Hello January;
+  font-weight: 200;
+  opacity: 0.2;
+  
+}
+
+
+.carta{
+  width: 500px;
+  text-align: justify;
+  margin-bottom: 100px;
 }
