@@ -50,7 +50,7 @@ const App = () => {
   return (
     <div className="container">
       {!isPlaying && (
-        <button className="play-button" onClick={playMusic}>🎵 Reproducir Música</button>
+        <button className="learn-more" onClick={playMusic}>🎵 Reproducir Música</button>
       )}
       {!showMessage ? (
         <div className="password-section">
